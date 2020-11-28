@@ -17,7 +17,8 @@ module RubyTwClub
     config.i18n.load_path += Dir["#{Rails.root}/config/locales/**/*.yml"]
 
     config.i18n.fallbacks = {
-      'zh-TW': %i[zh-TW zh-CN en]
+      'zh-TW': %i[zh-TW zh-CN en],
+      'zh-CN': %i[zh-CN zh-TW en],
       en: %i[en zh-TW zh-CN]
     }
 
