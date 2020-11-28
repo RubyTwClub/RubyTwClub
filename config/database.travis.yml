@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: RubyTwClub_development
+
+test:
+  <<: *default
+  database: RubyTwClub_test
+
+production:
+  <<: *default
+  database: RubyTwClub_production
+  username: RubyTwClub
+  password: <%= ENV['RUBYTWCLUB_DATABASE_PASSWORD'] %>
