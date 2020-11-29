@@ -11,13 +11,13 @@
 
 inherit_from: .rubocop_todo.yml
 
-# require: 
-  # - rubocop-rspec
+require: 
+  - rubocop-rspec
   # - rubocop-performance
 
 AllCops:
-  # Include:
-    # - rubocop-rspec
+  Include:
+    - rubocop-rspec
   Exclude:
     - 'bin/bundle'
 
