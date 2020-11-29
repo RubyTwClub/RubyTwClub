@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem "rails-i18n"
 gem 'rubocop', require: false
-# gem 'rubocop-rspec', require: false
+gem 'rubocop-rspec', require: false
 
 
 group :development, :test do
@@ -48,7 +48,7 @@ group :development do
   gem 'i18n-debug'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
-  # gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :test do
