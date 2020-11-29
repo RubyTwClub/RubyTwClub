@@ -27,9 +27,10 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
-gem 'rubocop', require: false
-
 gem "rails-i18n"
+gem 'rubocop', require: false
+gem 'rubocop-rspec', require: false
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -44,9 +45,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'i18n-debug'
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
-  gem 'i18n-debug'
+  gem 'rubocop-rspec', require: false
 end
 
 group :test do
