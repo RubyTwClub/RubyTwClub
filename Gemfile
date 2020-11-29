@@ -46,6 +46,7 @@ group :development do
   gem 'i18n-debug'
   gem 'rubocop', require: false
   gem 'rubocop-rspec', require: false
+  gem 'rubocop-performance', require: false
 end
 
 group :test do
