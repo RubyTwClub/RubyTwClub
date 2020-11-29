@@ -13,7 +13,7 @@ class RubocopRunner
   end
 
   def self.check_committed_changes
-    system("git diff-tree -r --no-commit-id --name-only head origin/master | xargs bundle exec rubocop #{ARGV.join(' ')}")
+    system("git diff-tree -r --no-commit-id --name-only head origin/DEV | xargs bundle exec rubocop #{ARGV.join(' ')}")
   end
 end
 
