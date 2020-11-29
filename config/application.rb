@@ -10,6 +10,17 @@ module RubyTwClub
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
+    config.time_zone = 'Taipei'
+
+
+    config.i18n.load_path += Dir["#{Rails.root}/config/locales/*.yml"]
+    config.i18n.load_path += Dir["#{Rails.root}/config/locales/**/*.yml"]
+
+    config.i18n.fallbacks = {
+      'zh-TW': %i[zh-TW zh-CN en],
+      'zh-CN': %i[zh-CN zh-TW en],
+      en: %i[en zh-TW zh-CN]
+    }
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
