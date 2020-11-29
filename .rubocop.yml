@@ -11,4 +11,12 @@ AllCops:
   Exclude:
     - 'bin/bundle'
 
-  
+  Rails:
+    Enabled: true
+
+  Rails/UnknownEnv:
+    Environments:
+      - production
+      - staging
+      - development
+      - test
