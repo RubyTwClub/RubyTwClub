@@ -25,4 +25,5 @@ before_script:
 script:
   - bundle exec rake db:migrate:reset RAILS_ENV=test
   - bundle exec rspec
-  - bundle exec rubocop --ignore-parent-exclusion
+  - git fetch origin DEV
+  - bundle exec bin/rubocop
