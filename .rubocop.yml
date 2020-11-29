@@ -3,3 +3,7 @@ inherit_from: .rubocop_todo.yml
 AllCops:
   Exclude:
     - 'bin/bundle'
+
+require: 
+  - rubocop-performance
+  - rubocop-rails
