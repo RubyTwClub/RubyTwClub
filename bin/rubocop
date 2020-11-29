@@ -1,5 +1,5 @@
 class RubocopRunner
-  COMPARE_TO_BRANCH = 'master'
+  COMPARE_TO_BRANCH = 'DEV'
   def self.check_branch_validity
     current_branch = `git branch | grep \\* | cut -d ' ' -f2`.strip
     if current_branch.empty? || current_branch == COMPARE_TO_BRANCH
