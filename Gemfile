@@ -33,7 +33,7 @@ gem 'selenium-webdriver'
 # Easy installation and use of web drivers to run system tests with browsers
 gem 'webdrivers'
 
-gem "nokogiri", ">= 1.11.0.rc4"
+gem 'nokogiri', '~> 1.11'
 
 gem "rails-i18n"
 
