@@ -28,6 +28,11 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'capybara', '>= 2.15'
+# Adds support for Capybara system testing and selenium driver
+gem 'selenium-webdriver'
+# Easy installation and use of web drivers to run system tests with browsers
+gem 'webdrivers'
+
 gem "nokogiri", ">= 1.11.0.rc4"
 
 gem "rails-i18n"
@@ -48,13 +53,6 @@ group :development do
   gem 'i18n-debug'
   gem 'rubocop', '~> 1.4', require: false
   gem 'foreman'
-end
-
-group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'selenium-webdriver'
-  # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
